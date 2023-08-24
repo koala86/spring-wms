@@ -20,6 +20,6 @@ public class UserController {
 
     @GetMapping("/list")
     public List<User> list() {
-        return userService.list();
+        return userService.listAll();
     }
 }

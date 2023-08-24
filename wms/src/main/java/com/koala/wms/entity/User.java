@@ -1,7 +1,5 @@
 package com.koala.wms.entity;
 
-import com.baomidou.mybatisplus.annotation.TableField;
-
 import lombok.Data;
 
 @Data
@@ -13,6 +11,6 @@ public class User {
     private int sex;
     private int age;
     private String phone;
-    private int roldId;
+    private int roleId;
     private String isValid;
 }
