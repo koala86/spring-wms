@@ -5,6 +5,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.koala.wms.entity.User;
@@ -27,5 +29,20 @@ public class UserController {
     @GetMapping("/list")
     public List<User> list() {
         return userService.list();
+    }
+
+    @PostMapping("/save")
+    public boolean save(@RequestBody User user) {
+        return userService.save(user);
+    }
+
+    @PostMapping("/saveOrUpdate")
+    public boolean saveOrUpdate(@RequestBody User user) {
+        return userService.saveOrUpdate(user);
+    }
+
+    @GetMapping("/remove")
+    public boolean remove(Integer id) {
+        return userService.removeById(id);
     }
 }
