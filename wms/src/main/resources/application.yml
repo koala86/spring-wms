@@ -7,3 +7,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123123
+    # 自动创建表结构，防止 Unknown Table 报错
+    jpa:
+      hibernate:
+        ddl-auto: update
