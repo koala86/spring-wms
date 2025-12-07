@@ -6,4 +6,4 @@ spring:
     url: jdbc:mysql://192.168.183.134:3306/wms
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: root_password
+    password: 123123
