@@ -5,8 +5,8 @@ spring:
   datasource:
     url: jdbc:mysql://192.168.183.134:3306/wms
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 123123
+    username: wms_user
+    password: wms_password
     # 自动创建表结构，防止 Unknown Table 报错
     jpa:
       hibernate:
